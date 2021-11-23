@@ -1,0 +1,58 @@
+﻿@model WebApplication2.Models.employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PAN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PAN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deptid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deptid)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.empid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
